@@ -3,35 +3,8 @@
 
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/q.js/1.4.1/q.min.js"></script> -->
-<!--    
-    <script type="text/javascript">
-
-    google.load("feeds", "1");
-
-    function initialize() {
-      var feed = new google.feeds.Feed("http://fastpshb.appspot.com/feed/1/fastpshb");
-      feed.load(function(result) {
-        console.log(result)
-        if (!result.error) {
-          var container = document.getElementById("feed");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            var div = document.createElement("div");
-            div.appendChild(document.createTextNode(entry.title));
-            container.appendChild(div);
-          }
-        }
-      });
-    }
-    google.setOnLoadCallback(initialize);
-
-    </script>
-  -->
   </head>
   <body>
-    <!-- <div id="feed"></div> -->
     <div class="container">
     	<h1>Entries</h1>
 	    <ul id="entry-list"></ul>
@@ -40,7 +13,6 @@
 	      <div>
 		      Posted <span id="entry-published-date"></span> by <span id="entry-author"></span>
 		  </div>
-	      <!-- <div id="entry-content-snippet"></div> -->
 	      <p id="entry-content"></p>
 	      <div id="entry-categories"></div>
 	    </div>
@@ -48,48 +20,3 @@
     <script src="app.js"></script>
   </body>
 </html>
-
-<!--
-Create a single web page which consumes this feed and presents it as an attractive list of well-formatted feed entries, including item metadata. When the user clicks on a particular feed entry in the list, they should be presented with a "detail view" for that entry including more complete metadata. Use your judgment to come up with a usable solution. 
-
-Do not write any server-side code. Use only HTML, CSS, and JavaScript for this exercise. Feel free to make use of JavaScript libraries, etc. Be advised that your code will be graded based on simplicity, maintainability, and use of appropriate markup. Your design will also be graded based on look and feel and overall user experience. Please produce a polished result ready to be released to users. 
-
-[
-  {
-    "title": "entry 1601 from 2014-12-31T16:30:08Z",
-    "link": "http://fastpshb.appspot.com/entry/1601",
-    "author": "",
-    "publishedDate": "Wed, 31 Dec 2014 08:30:08 -0800",
-    "contentSnippet": "2014-12-31T16:30:08Z",
-    "content": "2014-12-31T16:30:08Z",
-    "categories": []
-  },
-  {
-    "title": "entry 1600 from 2014-12-31T16:29:08Z",
-    "link": "http://fastpshb.appspot.com/entry/1600",
-    "author": "",
-    "publishedDate": "Wed, 31 Dec 2014 08:29:08 -0800",
-    "contentSnippet": "2014-12-31T16:29:08Z",
-    "content": "2014-12-31T16:29:08Z",
-    "categories": []
-  },
-  {
-    "title": "entry 1599 from 2014-12-31T16:28:08Z",
-    "link": "http://fastpshb.appspot.com/entry/1599",
-    "author": "",
-    "publishedDate": "Wed, 31 Dec 2014 08:28:08 -0800",
-    "contentSnippet": "2014-12-31T16:28:08Z",
-    "content": "2014-12-31T16:28:08Z",
-    "categories": []
-  },
-  {
-    "title": "entry 1598 from 2014-12-31T16:27:08Z",
-    "link": "http://fastpshb.appspot.com/entry/1598",
-    "author": "",
-    "publishedDate": "Wed, 31 Dec 2014 08:27:08 -0800",
-    "contentSnippet": "2014-12-31T16:27:08Z",
-    "content": "2014-12-31T16:27:08Z",
-    "categories": []
-  }
-]
--->
